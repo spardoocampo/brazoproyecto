@@ -1,13 +1,8 @@
 #include<Servo.h> 
-
 #define motorBase 12 //Declaro el pin de la base
-
 #define motorderecha 11
-
 #define motorizquierda 10
-
 #define motormano 9
-
 Servo Base;//Declaro el servomotor de la base
 
 
