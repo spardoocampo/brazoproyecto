@@ -1,4 +1,4 @@
 # brazoproyecto
 Estudiantes:
-SEBASTIAN PARDO OCAMPO 
+SEBASTIAN PARDO 
 SAMIR RECALDE
