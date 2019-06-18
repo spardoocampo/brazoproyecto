@@ -4,19 +4,20 @@
 #define motorizquierda 10
 #define motormano 9
 Servo Base;//Declaro el servomotor de la base
-
+int angulo = 0;
 
 void setup() {
   // put your setup code here, to run once:
  Base.attach(motorBase);//inicializamos el servo
- Base.write(90);
- delay(2000);
- Base.write(0);
- delay(2000);
- Base.write(180);
- delay(2000);
- Base.write(90);
- delay(2000);
+
+ for(angulo = 0;angulo <= 180;angulo++){
+ Base.write(angulo);
+ delay(100);
+ }
+ for(angulo = 180;angulo >= 0;angulo--){
+ Base.write(angulo);
+ delay(100);
+ }
  
  Base.attach(motorderecha);//el motor el mimnimo de grados es 47
  Base.write(47);
@@ -41,12 +42,21 @@ void setup() {
 Base.attach(motormano);//inicializamos el servo
  Base.write(100);//min100
  delay(2000);
- Base.write(135);
+ Base.write(110);
  delay(2000);
- Base.write(140);//max140
+ Base.write(115);//max140
  delay(2000);
- Base.write(135);
+ Base.write(120);
  delay(2000);
+  Base.write(125);//min100
+ delay(2000);
+ Base.write(130);
+ delay(2000);
+ Base.write(135);//max140
+ delay(2000);
+ Base.write(140);
+ delay(2000);
+
 
 }
 void loop() {
